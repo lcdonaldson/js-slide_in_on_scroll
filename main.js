@@ -2,13 +2,12 @@ $(document).ready(function() {
 
   //window and animation items
   var animation_elements = $.find('.animation-element');
-  var web_win = $(window);
 
   //check to see if any animation containers are currently in view
   function activate() {
     //get current window information
-    var win_ht = web_win.height();
-    var win_top = web_win.scrollTop();
+    var win_ht = $(window).height();
+    var win_top = $(window).scrollTop();
     var win_bottom = (win_top + win_ht);
 
     //iterate through elements to see if its in view
